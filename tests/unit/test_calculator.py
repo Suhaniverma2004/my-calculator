@@ -32,3 +32,25 @@ class TestBasicOperations:
 
 # TODO: Students will add TestMultiplyDivide class
 
+class TestMultiplyDivide:
+
+    def test_multiply_positive_numbers(self):
+
+        assert multiply(3, 4) == 12
+        assert multiply(7, 8) == 56
+    def test_multiply_by_zero(self):
+
+        assert multiply(5, 0) == 0
+        assert multiply(0, 10) == 0
+    def test_multiply_negative_numbers(self):
+
+        assert multiply(-2, 3) == -6
+        assert multiply(-4, -5) == 20
+    def test_divide_positive_numbers(self):
+
+        assert divide(10, 2) == 5
+        assert divide(15, 3) == 5
+    def test_divide_negative_numbers(self):
+
+        assert divide(-10, 2) == -5
+        assert divide(-12, -3) == 4
