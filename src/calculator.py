@@ -19,6 +19,14 @@ def divide(a, b):
 
 # TODO: Students will add multiply, divide, power, sqrt functions
 
+def power(a, b):
+    return a ** b
+def square_root(a):
+
+    if a < 0:
+        raise ValueError("Cannot calculate square root of negative number")
+    return a ** 0.5
+
 if __name__ == "__main__":
     print("🧮 Calculator Module")
     print(f"2 + 3 = {add(2, 3)}")
